@@ -1,0 +1,68 @@
+html, body {
+  font-family: "Courier New", Courier;
+  margin-left: 10px;
+  background-color: #d1cfe2;
+}
+
+/* reference: https://www.cssfontstack.com/Courier-New ADHD-friendly fonts because mono-spaced fonts, such as Consolas and Courier New, are good for neurodiverse readers since they present fewer opportunities for confusion between letters reference: https://www.fullfabric.com/articles/how-to-design-visual-learning-resources-for-neurodiverse-students#:~:text=Mono%2Dspaced%20fonts%2C%20such%20as,opportunities%20for%20confusion%20between%20letters. */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+
+/* reference https://www.w3schools.com/css/css_navbar_horizontal.asp */
+
+.box{
+  width:150px;
+  margin: 40px;
+  border-radius: 10px;
+  outline-style: solid;
+  padding: 10px;
+  display: inline-block;
+}
+
+.library{
+  display:inline;
+}
+
+input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 50;
+  border: solid 2px #bbb;
+}
+div {
+  margin: 10px 0px;
+}
+button {
+  padding: 8px;
+  background-color: #6a67ce;
+  color: #ffffff;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+img {
+  width: 150px;
+}

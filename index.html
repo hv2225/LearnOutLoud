@@ -1,0 +1,55 @@
+ <!-- Learn Out Loud is a library service with a read out loud feature which allows users to pick a text-based article/story from the main library and to add their own to their bookshelf. This library is aimed for students with difficulty in learning, such as students with ADHD, to focus more while learning-->
+
+<div id="app">
+  <!-- login -->
+  <div>
+    <h1>LEARN OUT LOUD</h1>
+    <p> New User? Create new account </p>
+    <input type="text" placeholder="username" v-model="username">
+    <input type="text" placeholder="password" v-model="password">
+   <button @click="addUser">Create New Account</button>
+    <p> Returning User? Log in Below </p>
+    <input type="text" placeholder="username" v-model="currentUsername">
+  <button @click="login">Login</button>
+ <!--  <button @click="login" @click="resetInputs">Login</button> -->
+  </div>
+  <hr>
+  <!-- Search -->
+  <div>
+    <h2>Choose A Book From The Library</h2>
+    <div for="">Author
+      <input type="text" placeholder="type your favorite author" v-model="author">
+      </div>
+    <div for="">Title
+      <input type="text" placeholder="book title" v-model="title">
+      </div>
+    <label for="">Genre
+    <select v-model="genre">
+      <option value="picture">Children's Picture Books</option>
+      <option value="action">Action & Adventure Books</option>
+      </select>
+      </label>
+    <button @click="searchBook()">Search</button>
+  </div>
+<hr>
+  <h2>Read My Own Book</h2>
+  <h3>Read Me Something</h3>
+  <div>
+  <input type="text" id="inputText" placeholder="Enter text to be read..."/>
+  </div>
+  <div>
+  <button type="button" @click="readMe">Read this to me</button> 
+  </div>
+  <!-- menu bar -->
+  <div>
+  <ul>
+  <li><a href="">Library</a></li>
+  <li><a href="">Bookshelf</a></li>
+  </ul>
+  </div>
+  
+  <!-- library -->
+  <book v-for="book in bookResults" :book="book" @add-reader="addReader"> </book>
+  <!-- bookshelf --> 
+  <borrowed v-for="borrowed in bookshelf" :borrowed="borrowed"> </borrowed> 
+</div>
