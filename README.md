@@ -1,8 +1,7 @@
-- 👋 Hi, I’m @hv2225
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning to code
-- 💞️ I’m looking to collaborate on ...
-- 📫 Reach me through email hv2225@columbia.edu or whatsapp on 9176035760
+- 👋 Hi, I’m Vanya
+- 👀 I’m interested in the intersection of technology, media, and education.
+- 🌱 I’m currently learning to code and data analysis.
+- 📫 Reach me through email hv2225@columbia.edu!
 
 <!---
 hv2225/hv2225 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
